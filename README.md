@@ -1,6 +1,6 @@
 # ASR Analysis - Redacted
 
-This repository contains a comprehensive analysis of how phonological features relate to Word Error Rate in Whisper v3, comparing original vs Cartesia-transformed audio across French and Spanish languages.
+This repository contains a comprehensive analysis of how phonological features relate to Word Error Rate in Whisper v3, comparing original vs Cartesia-transformed audio across French and Spanish languages. For full python notebook, see https://github.com/dianesarkis1/ASR-Analysis-Redacted/blob/main/inference_analysis.ipynb
 
 ## Overview
 
@@ -28,10 +28,7 @@ This repository contains a comprehensive analysis of how phonological features r
 ### Statistical Tests
 - **Feature-WER associations:** All features show significant but weak associations with WER category in French; no significant associations in Spanish
 - **Transformation effects:** French shows significant increase in high-WER cases after transformation; Spanish shows no significant difference
-- **Improvement rates:** Both languages show significantly more worsening than improvement after transformation
-
-## Files
-- `inference_analysis.ipynb` - Main analysis notebook
+- **Improvement rates:** Both languages show significantly more worsening than improvement after Cartesia transformation, but the effect is stronger in French
 
 ## Requirements
 
@@ -43,9 +40,3 @@ The notebook requires the following Python packages:
 - statsmodels
 - scikit-learn
 - scipy
-
-The analysis reveals that:
-1. **Whisper performance is primarily stable** across Cartesia transformations - original WER strongly predicts transformed WER
-2. **French is more sensitive** to acoustic feature changes than Spanish
-3. **Cartesia transformation generally worsens performance** in both languages, but the effect is stronger in French
-4. **Articulation rate and harmonicity** are the most important features for understanding transformation effects in French
