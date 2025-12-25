@@ -1,6 +1,8 @@
-# ASR Analysis - Redacted
+# ASR Analysis
 
 This repository contains a comprehensive analysis of how phonological features relate to Word Error Rate in Whisper v3, comparing original vs Cartesia-transformed audio across French and Spanish languages. For full python notebook, see https://github.com/dianesarkis1/ASR-Analysis-Redacted/blob/main/inference_analysis.ipynb
+
+Note that this analysis is part of a larger research project on ASR models. 
 
 ## Overview
 
